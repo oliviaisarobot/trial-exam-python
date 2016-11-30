@@ -45,4 +45,4 @@ First you need to import the module called "random" in order to work with random
 ### What does M stand for in MVC? [2p]
 #### Your answer:
 
-MVC stands for Model View Controller, which is a software design rule that separates the logic of the application from the database and the visual. The M or the Model handles all the data that the application works with. The Controller has a unidirectional communication with the model, which means that it can pull data and functions from the Model and it can also rewrite information that the Model stores. The Model can also contain exceptions and error handling.
+MVC stands for Model View Controller, which is a software design rule that separates the logic of the application from the database and the visual. The M or the Model handles all the data that the application works with. The Controller has a unidirectional communication with the model, which means that it can pull data and functions from the Model and it can also rewrite information that the Model stores. The Model can also contain exceptions and error handling. The Model is not connected to the View part of the application.
