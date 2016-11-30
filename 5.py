@@ -1,11 +1,23 @@
 pirates = [
-  {'Name': 'Olaf', 'has_wooden_leg': False, 'gold': 12},        
-  {'Name': 'Uwe', 'has_wooden_leg': True, 'gold': 9},        
-  {'Name': 'Jack', 'has_wooden_leg': True, 'gold': 16},        
-  {'Name': 'Morgan', 'has_wooden_leg': False, 'gold': 17},        
-  {'Name': 'Hook', 'has_wooden_leg': True, 'gold': 20},        
+  {'Name': 'Olaf', 'has_wooden_leg': False, 'gold': 12},
+  {'Name': 'Uwe', 'has_wooden_leg': True, 'gold': 9},
+  {'Name': 'Jack', 'has_wooden_leg': True, 'gold': 16},
+  {'Name': 'Morgan', 'has_wooden_leg': False, 'gold': 17},
+  {'Name': 'Hook', 'has_wooden_leg': True, 'gold': 20},
 ]
 
 # Write a function that takes any list that contains pirates as in the example,
 # And returns a list of names containing the pirates that has wooden leg and
 # more than 15 gold
+
+def wooden_leg_and_more_than_15g(piratelist):
+    if type(piratelist) != list:
+        raise TypeError("Input is not a dictionary.")
+    else:
+        namelist = []
+        for pirate in piratelist:
+            if pirate['has_wooden_leg'] == True and pirate['gold'] > 15:
+                namelist.append(pirate['Name'])
+        return namelist
+
+print(wooden_leg_and_more_than_15g(pirates))
